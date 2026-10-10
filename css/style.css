@@ -227,10 +227,7 @@ body::before {
 .ludi-hero-box {
   position: relative;
   width: 100%;
-  height: 100vh;
-  height: 100dvh;
-  min-height: 580px;
-  max-height: 920px;
+  height: 740px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -239,11 +236,13 @@ body::before {
 
 .ludi-hero-bg {
   position: absolute;
-  top: -280px;
+  bottom: 120px;
   left: -690px;
-  object-fit: cover;
-  object-position: center bottom;
+  width: 1920px;
+  height: 1080px;
+  max-width: none;
   z-index: 1;
+  pointer-events: none;
 }
 
 /* Reopen Mail Button (Appears top-right of hero when confirm window is closed) */
@@ -297,7 +296,7 @@ body::before {
 /* Maple Confirmation Modal Window (Pure Vector & Crisp Font UI) */
 .ludi-confirm-window-box {
   position: absolute;
-  top: clamp(68px, 12vh, 140px);
+  top: 100px;
   left: 50%;
   transform: translateX(-50%);
   width: 310px;
@@ -319,7 +318,7 @@ body::before {
 
 .ludi-confirm-window-box.hud-overlay-popup {
   z-index: 25;
-  top: clamp(68px, 12vh, 140px);
+  top: 100px;
   height: 138px;
 }
 
@@ -437,7 +436,7 @@ body::before {
 /* Maple Couple Character on Brick Platform */
 .ludi-character-stage {
   position: absolute;
-  bottom: 148px;
+  bottom: 150px;
   left: 50%;
   transform: translateX(-50%);
   width: 260px;
