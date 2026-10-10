@@ -23,9 +23,9 @@
 - **프로젝트**: 웨딩 모바일 청첩장 Version 3 (MapleStory Ludibrium Toy Factory Theme)
 - **Figma 디자인 동기화 완료**:
   - Figma Node ID: `109:1754` (피그마 REST API 파싱 및 100% 픽셀 일치 구현 완료)
-  - 메이플 초기화 확인창 팝업 및 신랑/신부 명찰/말풍선 히어로
+  - 메이플 초기화 확인창 팝업 및 신랑/신부 명찰/말풍선 히어로 (모바일 100dvh 뷰포트 반응형 최적화)
   - **Figma HUD Quick Menu Bar (Node `141:109`)**:
-    - `hero-media-box` 하단 100% 풀위드 밀착 바 (`.ludi-game-hud-bar`).
+    - `hero-media-box` 하단 100% 풀위드 밀착 바 (`.ludi-game-hud-bar`, 첫 화면 100dvh 내 완벽 안착).
     - 6종 컬러 타일 및 SVG 아이콘 (`assets/icon_hud_*.svg`) 연동 완료.
     - 6종 오버레이 팝업(`hud-overlay-popup`: 예식정보, 오시는길, 참석여부, 마음전달, 갤러리, 사진올리기) 연동 완료.
   - **편지 버튼(`mail.webp`) 토글 시스템**:
