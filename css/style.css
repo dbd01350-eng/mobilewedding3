@@ -130,7 +130,7 @@ body::before {
 
 .global-tower-bg-base {
   position: absolute;
-  top: 700px;
+  top: 670px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -142,7 +142,7 @@ body::before {
 
 .global-tower-bg {
   position: absolute;
-  top: 700px;
+  top: 670px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -227,7 +227,7 @@ body::before {
 .ludi-hero-box {
   position: relative;
   width: 100%;
-  height: 700px;
+  height: 670px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -237,7 +237,7 @@ body::before {
 .ludi-hero-bg {
   position: absolute;
   bottom: 120px;
-  left: -700px;
+  left: -730px;
   width: 1920px;
   height: 1080px;
   max-width: none;
@@ -296,7 +296,7 @@ body::before {
 /* Maple Confirmation Modal Window (Pure Vector & Crisp Font UI) */
 .ludi-confirm-window-box {
   position: absolute;
-  top: 150px;
+  top: 120px;
   left: 50%;
   transform: translateX(-50%);
   width: 310px;
@@ -318,7 +318,7 @@ body::before {
 
 .ludi-confirm-window-box.hud-overlay-popup {
   z-index: 50;
-  top: 150px;
+  top: 120px;
   height: 138px;
 }
 
@@ -988,7 +988,7 @@ body::before {
 
 /* Upper Level: Knight NPC -> RSVP Modal */
 .rsvp-target {
-  top: round(nearest, 25%, 1px);
+  top: 20.5%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -1007,13 +1007,12 @@ body::before {
   height: 20px;
   width: auto;
   margin-top: 4px;
-
 }
 
 /* Lower Level: Bride Character -> Bride Account Modal */
 .bride-target {
-  top: round(nearest, 60.5%, 1px);
-  left: round(nearest, 20.6%, 1px);
+  top: 56.5%;
+  left: 20.6%;
 }
 
 .character-sprite.bride {
@@ -1025,13 +1024,12 @@ body::before {
   height: 20px;
   width: auto;
   margin-top: 4px;
-
 }
 
 /* Lower Level: Groom Character -> Groom Account Modal */
 .groom-target {
-  top: round(nearest, 60.5%, 1px);
-  left: round(nearest, 54.5%, 1px);
+  top: 56.5%;
+  left: 54.5%;
 }
 
 .character-sprite.groom {
@@ -1043,7 +1041,18 @@ body::before {
   height: 20px;
   width: auto;
   margin-top: 4px;
+}
 
+/* Large / PC Screen Adjustment (440px 이상 넓은 화면) */
+@media (min-width: 440px) {
+  .rsvp-target {
+    top: 25%;
+  }
+
+  .bride-target,
+  .groom-target {
+    top: 60.5%;
+  }
 }
 
 /* ==========================================
@@ -1859,56 +1868,21 @@ body::before {
   text-align: center;
 }
 
-.ending-bg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center bottom;
-  z-index: 1;
-}
-
-.ending-overlay-dark {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(20, 75, 166, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%); /* token-exempt: ending overlay dark */
-  z-index: 2;
-}
-
-.ending-content {
-  position: relative;
-  z-index: 5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  margin-top: 24px;
-}
-
-.ending-couple-sprite {
-  max-width: 220px;
-  height: auto;
-}
-
-.ludi-dialog-bubble {
-  background: #ffffff; /* token-exempt: bubble bg white */
-  border: 3px solid #ffc837; /* token-exempt: ending bubble gold border */
-  border-radius: 16px;
-  padding: 16px 20px;
-  font-size: 14px;
-  font-weight: 700;
-  color: #144ba6; /* token-exempt: dialog bubble text blue */
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); /* token-exempt: bubble shadow */
-  position: relative;
-}
-
 .ending-footer {
   position: relative;
   z-index: 5;
   font-size: 12px;
-  color: var(--theme-text-dark)
+  color: var(--theme-text-dark);
   line-height: 1.6;
+  margin-top: 20px;
+}
+
+.ending-tower-base-wrap {
+  width: 100%;
+  max-width: 446px;
+  line-height: 0;
+  position: relative;
+  z-index: 5;
 }
 
 /* ==========================================
