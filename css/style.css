@@ -227,7 +227,7 @@ body::before {
 .ludi-hero-box {
   position: relative;
   width: 100%;
-  height: 740px;
+  height: 720px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -236,7 +236,7 @@ body::before {
 
 .ludi-hero-bg {
   position: absolute;
-  bottom: 120px;
+  bottom: 0;
   left: -690px;
   width: 1920px;
   height: 1080px;
@@ -248,8 +248,8 @@ body::before {
 /* Reopen Mail Button (Appears top-right of hero when confirm window is closed) */
 .hero-mail-reopen-btn {
   position: absolute;
-  top: 150px;
-  right: 10px;
+  top: 70px;
+  right: 18px;
   z-index: 50;
   width: 66px;
   height: 66px;
@@ -296,7 +296,7 @@ body::before {
 /* Maple Confirmation Modal Window (Pure Vector & Crisp Font UI) */
 .ludi-confirm-window-box {
   position: absolute;
-  top: 170px;
+  top: 90px;
   left: 50%;
   transform: translateX(-50%);
   width: 310px;
@@ -318,7 +318,7 @@ body::before {
 
 .ludi-confirm-window-box.hud-overlay-popup {
   z-index: 25;
-  top: 170px;
+  top: 90px;
   height: 138px;
 }
 
@@ -436,7 +436,7 @@ body::before {
 /* Maple Couple Character on Brick Platform */
 .ludi-character-stage {
   position: absolute;
-  bottom: 150px;
+  bottom: 116px;
   left: 50%;
   transform: translateX(-50%);
   width: 260px;
@@ -444,6 +444,9 @@ body::before {
   flex-direction: column;
   align-items: center;
   z-index: 5;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 /* Groom Speech Bubble */
@@ -455,11 +458,15 @@ body::before {
   align-items: center;
   justify-content: center;
   z-index: 10;
+  pointer-events: none;
 }
 
 .speech-bubble-bg {
   height: 70px;
   width: auto;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 .speech-bubble-text {
@@ -473,11 +480,16 @@ body::before {
   color: #8c1b09; /* token-exempt: deep red-brown text */
   letter-spacing: -0.02em;
   white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
 }
 
 .maple-couple-sprite {
   width: 200px;
   height: auto;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 /* Couple Nameplates Row */
@@ -487,10 +499,14 @@ body::before {
   gap: 6px;
   margin-top: 2px;
   z-index: 6;
+  pointer-events: none;
 }
 
 .maple-nameplate {
   height: 25px;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 /* ==========================================
