@@ -534,7 +534,8 @@ document.addEventListener('DOMContentLoaded', () => {
     lightboxSliderTrack.style.scrollBehavior = 'auto';
 
     const slideWidth = window.innerWidth;
-    lightboxSliderTrack.scrollLeft = (6 + realIndex) * slideWidth;
+    const lbSetCount = Math.max(1, Math.floor(lightboxSlides.length / 3));
+      lightboxSliderTrack.scrollLeft = (lbSetCount + realIndex) * slideWidth;
 
     requestAnimationFrame(() => {
       lightboxSliderTrack.scrollLeft = (6 + realIndex) * (lightboxSliderTrack.offsetWidth || window.innerWidth);
@@ -568,9 +569,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let lbScrollEndTimer = null;
 
     const checkLightboxLoop = () => {
-      if (isLightboxResetting || lightboxSlides.length < 12) return;
+      const lbSetCount = Math.max(1, Math.floor(lightboxSlides.length / 3));
+      if (isLightboxResetting || lightboxSlides.length < 6) return;
       const sWidth = lightboxSliderTrack.offsetWidth || window.innerWidth;
-      const fullSetW = 6 * sWidth;
+      const fullSetW = lbSetCount * sWidth;
       if (fullSetW <= 0) return;
 
       let deltaScroll = 0;

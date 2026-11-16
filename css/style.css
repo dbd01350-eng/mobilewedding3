@@ -1066,14 +1066,6 @@ body::before {
   display: block;
 }
 
-.gallery-tower-brick {
-  width: 355px;
-  max-width: 80%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
 .gallery-photo-frame {
   width: 355px;
   max-width: 80%;
@@ -1165,12 +1157,6 @@ body::before {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-}
-
-.gallery-tower-bottom-wrap .gallery-tower-brick {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
 }
 
 .gallery-portal-btn {
