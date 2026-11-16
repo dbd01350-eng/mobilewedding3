@@ -538,7 +538,8 @@ document.addEventListener('DOMContentLoaded', () => {
       lightboxSliderTrack.scrollLeft = (lbSetCount + realIndex) * slideWidth;
 
     requestAnimationFrame(() => {
-      lightboxSliderTrack.scrollLeft = (6 + realIndex) * (lightboxSliderTrack.offsetWidth || window.innerWidth);
+      const lbSetCount = Math.max(1, Math.floor(lightboxSlides.length / 3));
+      lightboxSliderTrack.scrollLeft = (lbSetCount + realIndex) * (lightboxSliderTrack.offsetWidth || window.innerWidth);
       void lightboxSliderTrack.offsetHeight;
       requestAnimationFrame(() => {
         lightboxSliderTrack.style.scrollSnapType = 'x mandatory';
