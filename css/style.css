@@ -1648,11 +1648,6 @@ body::before {
   padding-top: 10px;
 }
 
-.btn-brick-action:nth-child(3) {
-  color: #ffffff; /* token-exempt: wedding hall white text */
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4); /* token-exempt: brick button dark text shadow */
-}
-
 .btn-brick-action:active {
   transform: scale(0.96);
 }
